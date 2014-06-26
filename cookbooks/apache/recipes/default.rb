@@ -15,11 +15,68 @@ package "httpd" do
 end
 
 # 2. Put the homepage in place
+default_index_page = node["apache"]["indexfile"]
 
-cookbook_file "/var/www/html/index.html" do
-  source "index.html"
+cookbook_file "/var/www/html/a/index.html" do
+  source default_index_page
   mode "0644"
 end
+
+cookbook_file "/var/www/html/b/index.html" do
+  source default_index_page
+  mode "0644"
+end
+
+cookbook_file "/var/www/html/c/index.html" do
+  source default_index_page
+  mode "0644"
+end
+
+cookbook_file "/var/www/html/d/index.html" do
+  source default_index_page
+  mode "0644"
+end
+
+cookbook_file "/var/www/html/e/index.html" do
+  source default_index_page
+  mode "0644"
+end
+
+cookbook_file "/var/www/html/index.html" do
+  source default_index_page
+  mode "0644"
+end
+
+cookbook_file "/var/www/html/index.html" do
+  source default_index_page
+  mode "0644"
+end
+
+cookbook_file "/var/www/html/index.html" do
+  source default_index_page
+  mode "0644"
+end
+
+cookbook_file "/var/www/html/index.html" do
+  source default_index_page
+  mode "0644"
+end
+
+cookbook_file "/var/www/html/index.html" do
+  source default_index_page
+  mode "0644"
+end
+
+cookbook_file "/var/www/html/index.html" do
+  source default_index_page
+  mode "0644"
+end
+
+cookbook_file "/var/www/html/index.html" do
+  source default_index_page
+  mode "0644"
+end
+
 
 # 3. Start and enable the service
 
