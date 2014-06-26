@@ -1,4 +1,4 @@
-default["apache"]["indexfile"]         =     "index10.html"
+default["apache"]["indexfile"] = "index.html"
 
 # if node.name == "node1"
 #   default["apache"]["indexfile"] = "index.html"
